@@ -1,0 +1,28 @@
+{
+  "hosting": {
+    "redirect":[
+      {
+        "source":"/about",
+        "Destination": "/",
+        "type": 301
+      },
+      {
+        "source":"/contact",
+        "Destination": "/",
+        "type": 302
+      }
+    ],
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
