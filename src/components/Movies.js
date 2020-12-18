@@ -1,7 +1,7 @@
 import React from "react";
-import Banner from "./Banner";
-import Row from "./Row";
-import requests from "./requests";
+import Banner from "../components/Banner";
+import Row from "../components/Row";
+import requests from "../components/requests";
 // import "./movies.css"
 
 function Movies() {

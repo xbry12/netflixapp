@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import "./Home.css";
-import logo from "./images/01_Netflix_Logo/01_Netflix_Logo_RGB/Netflix_Logo_RGB.png";
+import "../components/css-files/Home.css";
+// import Logo from "../images/01_Netflix_Logo/01_Netflix_Logo_RGB/Netflix_Logo_RGB.png"
+// import logo from "../images/01_Netflix_Logo/01_Netflix_Logo_RGB/Netflix_Logo_RGB.png";
 import { NavLink, Link } from "react-router-dom";
 import styled from "styled-components";
 class Home extends Component {
@@ -9,15 +10,17 @@ class Home extends Component {
       <HeaderComponent className="header-container">
         <div className="header-top">
           {/* <Logo src={logo} /> */}
-          <NavLink to="/" className="signin-btn">
+          <NavLink to="/profile" className="signin-btn">
             Sign In
           </NavLink>
         </div>
         <div className="header-content">
           <Title>Unlimited movies, TV shows, and more.</Title>
           <SubTitle>Watch anywhere. Cancel anytime.</SubTitle>
-          <Link to="/" className="main-offer-btn">
-            Get Started
+          <Link to="/movies" className="main-offer-btn">
+            Get Started <i className="arrow"class="far fa-arrow-alt-circle-right"></i>
+
+
           </Link>
         </div>
       </HeaderComponent>

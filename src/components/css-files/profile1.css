@@ -1,0 +1,145 @@
+body {
+  background-color: #141414;
+}
+
+.profiles-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 150vh;
+  /* background-color: green; */
+}
+
+.profiles-container > .title {
+  color: white;
+  font-family: inherit;
+  font-size: 68px;
+  /* background-color:blue; */
+  user-select: none;
+}
+.profiles-container > .profiles {
+  display: flex;
+}
+
+.profiles-container > .profiles > .profile {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0px 20px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  /* border: 5px solid pink; */
+}
+
+.profiles-container > .profiles > .profile:first-child {
+  margin-left: 0px;
+}
+
+.profiles-container > .profiles > .profile:last-child {
+  margin-right: 0px;
+}
+
+.profiles-container > .profiles > .profile:hover {
+  cursor: pointer;
+}
+
+.profiles-container > .profiles > .profile:hover > .username {
+  color: white;
+  /* border: 3px solid purple; */
+}
+
+.profiles-container > .profiles > .profile:hover > .image {
+  /* border: 3px solid rgb(100, 100, 100); */
+  border: 3px solid white;
+
+  border-radius: 15px;
+}
+
+.profiles-container > .profiles > .profile > .image {
+  margin-bottom: 20px;
+  /* margin-left: 20%; */
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 200px;
+  height: 200px;
+
+  border: 10px solid black transparent;
+  border-radius: 15px;
+  /* background-image: url("https://m.media-amazon.com/images/I/81aCJakI4DL._AC_SL1500_.jpg"); */
+  background-image: url("https://occ-0-3265-999.1.nflxso.net/dnm/api/v6/0RO1pLmU93-gdXvuxd_iYjzPqkc/AAAABbluOJk0KQhemtoe26zGG2qS3-u6TupQA2NpLMF158R5XkqI8hK8Wf2zOUuVXlV8GCvkGBO0atD04a95Hbov9tKHcIkl.png?r=9fe");
+  background-size: cover;
+}
+
+.profiles-container > .profiles > .profile > .username {
+  text-align: center;
+
+  color: var(--grey-color);
+  font-size: 24px;
+}
+
+/* button css */
+
+.btn {
+  /* transition: background 200ms linear; */
+
+  border: 1px solid gray;
+  padding: 10px 20px;
+  background: none;
+  color: gray;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn:hover {
+  color: white;
+  border: 2px solid white;
+  transition: 200ms ease-in;
+  cursor: pointer;
+}
+
+.btn2 {
+  /* transition: background 200ms linear; */
+
+  border: 1px solid gray;
+  padding: 10px 20px;
+  background: none;
+  color: gray;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  width: 70%;
+  margin-left: 15%;
+  
+}
+
+.btn2:hover {
+  color: white;
+  border: 2px solid white;
+  transition: 200ms ease-in;
+  cursor: pointer;
+}
+
+.username {
+  margin-bottom: 5%;
+}
+
+.form {
+  /* background-color: red; */
+  height: 50px;
+  width: 200px;
+  background-color: #141414;
+  /* background-color: white; */
+  color: red;
+
+  border: 2px solid white transparent;
+  border-radius: 5px;
+}
+
+.label {
+  color: gray;
+}

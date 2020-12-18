@@ -1,26 +1,53 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
 import "./App.css";
-import Nav from "./Nav";
-import Home from "./Home";
-import SignIn from "./SignIn";
-import Movies from "./Movies";
-import Profile from "./profile";
+import Nav from "./components/Nav";
+import Home from "./components/Home";
+import SignIn from "./components/SignIn";
+import Movies from "./components/Movies";
+import Profile from "./components/profile";
 import { Switch, Route } from "react-router-dom";
+
+
 
 class App extends Component {
   constructor(props) {
     super(props);
   }
-  // componentDidMount() {
-  //   fetch("http://localhost:8000/profile/1", {
-  //     method: "GET",
-  //     headers: {
-  //       Accept: "application/json",
-  //     },
-  //   })
-  //   .then((response) => response.json())
-  //   .then((output) => console.log({output}));
-  // }
+  componentDidMount() {
+    fetch("http://localhost:8000/profile/1", {
+      method: "GET",
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then((response) => response.json())
+      .then((output) => console.log({ output }));
+
+    // fetch("https://localhost:8000/home", {
+    //   headers: {
+    //     Accept: "application/json",
+    //   },
+    // })
+    //   .then((response) => response.json())
+    //   .then((output) => console.log({ output }));
+
+    // fetch("https://localhost:8000/movies", {
+    //   headers: {
+    //     Accept: "application/json",
+    //   },
+    // })
+    //   .then((response) => response.json())
+    //   .then((output) => console.log({ output }));
+
+    // fetch("https://localhost:8000/signin", {
+    //   headers: {
+    //     Accept: "application/json",
+    //   },
+    // })
+    //   .then((response) => response.json())
+    //   .then((output) => console.log({ output }));
+  }
+
   render() {
     return (
       <div className="app">

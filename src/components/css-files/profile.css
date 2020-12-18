@@ -1,0 +1,167 @@
+.profiles-container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+    display: flex;
+  
+    height: 150vh;
+  }
+  
+  .profiles-container > .title {
+    color: white;
+    font-family: inherit;
+    font-size: 68px;
+  
+    user-select: none;
+  }
+  
+  .profiles-container > .profiles {
+    display: flex;
+  }
+  
+  .profiles-container > .profiles > .profile {
+    display: flex;
+    flex-direction: column;
+  
+    margin: 0px 20px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+  
+  .profiles-container > .profiles > .profile:first-child {
+    margin-left: 0px;
+  }
+  
+  .profiles-container > .profiles > .profile:last-child {
+    margin-right: 0px;
+  }
+  
+  .profiles-container > .profiles > .profile:hover {
+    cursor: pointer;
+  }
+  
+  .profiles-container > .profiles > .profile:hover > .username {
+    color: white;
+  }
+  
+  .profiles-container > .profiles > .profile:hover > .image {
+    border: 5px solid rgb(100, 100, 100);
+  }
+  
+  .profiles-container > .profiles > .profile > .image {
+    margin-bottom: 20px;
+  
+    width: 200px;
+    height: 200px;
+  
+    border: 5px solid transparent;
+  }
+  
+  .profiles-container > .profiles > .profile > .username {
+    text-align: center;
+  
+    color: var(--grey-color);
+    font-size: 24px;
+  }
+
+
+
+  /* button css */
+
+  .btn {
+    /* transition: background 200ms linear; */
+      
+      border: 1px solid gray;
+      padding: 10px 20px;
+      background: none;
+      color: gray;
+      font-size: 18px;
+      font-weight: normal;
+      letter-spacing: 2px;
+  }
+
+  .btn:hover {
+    color: white;
+    border:2px solid white;
+    transition: 200ms ease-in;
+    cursor: pointer;
+  }
+
+  .username {
+      margin-bottom: 5%;
+  }
+
+  .image {
+      border-radius: 2px 2px 2px 2px;
+  }
+/* .delete {
+  transition: background 200ms linear;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 40px;
+
+  background-color: white;
+
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.delete:hover {
+    background-color: rgb(200, 200, 200);
+
+} */
+/* 
+.manage {
+    border: 1px solid var(--grey-color);
+    padding: 10px 40px;
+  
+    background: none;
+    color: var(--grey-color);
+  
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.manage:hover{
+    border: 1px solid white;
+
+    color: white;
+} */
+
+
+/* .delete {
+    border: 1px solid var(--grey-color);
+    padding: 10px 40px;
+  
+    background: none;
+    color: var(--grey-color);
+  
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.delete:hover{
+    border: 1px solid white;
+
+    color: white;
+/* } */
+/* .delete {
+transition: background 200ms linear;
+border: none;
+border-radius: 3px;
+padding: 10px 40px;
+
+background: rgba(120, 120, 120, 0.4);
+color: white;
+
+font-family: inherit;
+font-size: 24px;
+font-weight: 500;
+}
+
+delete:hover{
+    background: rgba(50, 50, 50, 0.4);
+    cursor:pointer;
+} */ 

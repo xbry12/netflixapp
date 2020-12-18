@@ -1,8 +1,10 @@
 import React, {useState, useEffect} from "react";
-// import { Link } from 'react-router-dom'
-import logo from "./images/01_Netflix_Logo/01_Netflix_Logo_RGB/Netflix_Logo_RGB.png";
-import avatar from "./images/profile.png";
-import "./Nav.css";
+import { Link } from 'react-router-dom'
+// import logo from "./images/01_Netflix_Logo/01_Netflix_Logo_RGB/Netflix_Logo_RGB.png";
+import logo from "../images/01_Netflix_Logo/01_Netflix_Logo_RGB/Netflix_Logo_RGB.png";
+// import avatar from "./images/profile.png";
+import avatar from "../images/profile.png"
+import "../components/css-files/Nav.css";
 
 function Nav() {
     const [show, handleShow] = useState(false);
@@ -22,9 +24,12 @@ function Nav() {
 
   return (
     <div className={`nav ${show && "nav__black"}`}>
-      <img className="nav__logo" src={logo} alt="Netflix logo" />
+      <Link to = "/home">
+      <img className="nav__logo" src={logo} alt="Netflix logo"  />
+      </Link>
+      <Link to ="profile">
       <img className="nav__avatar" src={avatar} alt="Netflix Avatar" />
-
+      </Link>
       {/* <nav>
         <ul>
           <li>
