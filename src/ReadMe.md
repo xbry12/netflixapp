@@ -1,5 +1,5 @@
 ## Netflix Clone
-Hello! Welcome to my Netflix Clone
+Hello! Welcome to my Netflix App
 
 The goal of this project was to challenge my programming skills and attempt to make an app that resembled the famous streaming application known as Netflix. In my mind, an avid user of video streaming services such as Netflix, Hulu, Starz etc... would be appreciate the similar design and look of the website. The intention is for them to feel as though they could actually use it to watch their favorite show/movie.
 
@@ -20,3 +20,6 @@ I created a demo version of my app to start off, then I added my twists to the a
  ## Usage
 
  Right now, the app runs locally, I have yet to deploy my application, but the plan is to run the front end via firebase and the backend on Django.
+
+ ![](my_video.mov)
+ ![netflixdemo1.mov](Netflix)

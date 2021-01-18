@@ -21,12 +21,12 @@ function Row({ title, fetchUrl, isLargeRow }) {
       //   console.log(requests.data.results);
       setMovies(request.data.results);
       return request;
-      // Insert URL (55:20 in vid)
+      
     }
     fetchData();
   }, [fetchUrl]);
   // first argument in function, second in square brackets
-  //   console.table(movies);
+    console.table(movies);
   // look up useEffect (always place variable) -> variable being passed from outside block...useEffect needs to know this.
   // use state to keep track of the movies
 

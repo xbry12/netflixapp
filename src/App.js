@@ -14,7 +14,7 @@ class App extends Component {
     super(props);
   }
   componentDidMount() {
-    fetch("http://localhost:8000/profile/1", {
+    fetch("http://localhost:8000/home", {
       method: "GET",
       headers: {
         Accept: "application/json",

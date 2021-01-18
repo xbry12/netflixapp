@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import "./profile.css";
+import "../components/css-files/profile.css";
 import "../components/css-files/profile1.css";
 // import Icon from '../components/icons/styles/icons'
 
