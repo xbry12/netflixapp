@@ -21,5 +21,6 @@ I created a demo version of my app to start off, then I added my twists to the a
  ## Usage
 
  Right now, the app runs locally, I have yet to deploy my application, but the plan is to run the front end via firebase and the backend on Django.
+ Click the picture below to access the project DEMO.
 
 [![Watch the video](netflixappvid.png)](https://youtu.be/u91umF6tQOE)
